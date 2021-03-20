@@ -12,6 +12,7 @@ read -p "Fill the Token:" -s token
 $GIT_BIN clone "https://${token}:x-oauth-basic@github.com/timoshka-lab/wp-security.git"
 $COMPOSER_BIN install -d "${WORKING_PATH}/src"
 chmod u+x "${WORKING_PATH}/autoupdate.sh"
+chmod u+x "${WORKING_PATH}/configure.sh"
 
 cd "$WORKING_PATH"
 $GIT_BIN config credential.helper store
