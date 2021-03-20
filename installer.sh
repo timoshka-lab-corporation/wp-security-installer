@@ -1,6 +1,7 @@
-#!/bin/sh
+#!/bin/bash
+set -e
 
-INSTALL_PATH=$(dirname "$0")
+INSTALL_PATH=$(cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P)
 GIT_BIN=$(which git)
 COMPOSER_BIN=$(which composer)
 
