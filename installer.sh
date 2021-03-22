@@ -9,7 +9,7 @@ COMPOSER_BIN=$(which composer)
 read -p "Fill the Username:" username
 read -p "Fill the Token:" -s token
 
-$GIT_BIN clone "https://${token}:x-oauth-basic@github.com/timoshka-lab/wp-security.git"
+$GIT_BIN clone "https://${token}:x-oauth-basic@github.com/timoshka-lab-corporation/wp-security.git"
 $COMPOSER_BIN install -d "${WORKING_PATH}/src"
 chmod u+x "${WORKING_PATH}/autoupdate.sh"
 chmod u+x "${WORKING_PATH}/configure.sh"
